@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dialog Box</title>
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-image: url('bg.jpg');
+            background-size: cover;
+            height: 100vh;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+        }
+
+        button {
+            border-radius: 10px;
+            height: 70px;
+            width: 100px;
+            background-color: rgb(7, 238, 49);
+            box-shadow: 5px 5px 10px black;
+
+        }
+
+        p {
+            font-weight: 700;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <button onclick="Dialog()">
+            <p>Dialog Box</p>
+        </button>
+    </div>
+
+    <script>
+        function Dialog() {
+            var result = confirm('You are beautiful in your own way?');
+
+            if (result) {
+                alert('submitted!');
+            } else {
+                alert('Cancelled!');
+            }
+        }
+    </script>
+
+</body>
+
+</html>
